@@ -1,48 +1,63 @@
+/* ===========================
+   Rabico v0.1
+   =========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#0d0d0d;
+    background:linear-gradient(135deg,#0a0a0a,#141414);
     color:white;
+    min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-}
-
-.container{
-    text-align:center;
 }
 
 h1{
-    font-size:55px;
-    margin-bottom:10px;
+    font-size:70px;
+    font-weight:700;
+    margin-bottom:15px;
+    text-align:center;
 }
 
 p{
+    font-size:22px;
     color:#bdbdbd;
-    margin-bottom:35px;
-    font-size:20px;
+    text-align:center;
+    margin-bottom:40px;
 }
 
 button{
-    display:block;
-    width:240px;
+    width:260px;
+    height:55px;
+
     margin:12px auto;
-    padding:16px;
+    display:block;
+
     border:none;
-    border-radius:15px;
+    border-radius:16px;
+
     background:white;
     color:black;
+
     font-size:18px;
+    font-weight:bold;
+
     cursor:pointer;
-    transition:.3s;
+
+    transition:0.3s;
 }
 
 button:hover{
-    transform:scale(1.05);
+    transform:translateY(-3px);
+}
+
+button:active{
+    transform:scale(.96);
 }
